@@ -1,0 +1,5 @@
+optbinning==0.20.1
+scipy==1.8.1
+catboost==1.2.7
+pandas==1.4.4
+xgboost==2.1.1

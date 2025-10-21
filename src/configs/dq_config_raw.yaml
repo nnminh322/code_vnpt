@@ -1,0 +1,323 @@
+completeness:
+  active_null_ratio: ma
+  active_null_count: ma
+  active_row_count: ma
+  null_ratio: 
+    - severity: ma
+      threshold : {
+        'blueinfo_ggsn' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_spi_3g_subs' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_air' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_ct_no' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_ct_tra' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_tac_gsma' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_cv207' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascdr_2friend_log' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_dbvnp_prepaid_subscribers_history' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_ccs_xxx_danhba_dds_pttb' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_sdp_subscriber' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascdr_udv_credit_log' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_crs_usage' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascdr_utn_credit_log' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascloud_da' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_voice_msc' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_voice_volte' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_voice_volte_v2' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_crs_usageda' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          }
+      }
+  null_count:
+    - severity: ma
+      threshold : {
+        'blueinfo_ggsn' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_spi_3g_subs' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_air' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_ct_no' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_ct_tra' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_tac_gsma' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_cv207' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascdr_2friend_log' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_dbvnp_prepaid_subscribers_history' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_ccs_xxx_danhba_dds_pttb' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_sdp_subscriber' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascdr_udv_credit_log' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_crs_usage' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascdr_utn_credit_log' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascloud_da' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_voice_msc' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_voice_volte' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_voice_volte_v2' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_crs_usageda' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          }
+      }
+  row_count:
+    - severity: ma
+      threshold : {
+        'blueinfo_ggsn' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_spi_3g_subs' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_air' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_ct_no' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_ct_tra' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_tac_gsma' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_cv207' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascdr_2friend_log' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_dbvnp_prepaid_subscribers_history' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ccbs_ccs_xxx_danhba_dds_pttb' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_sdp_subscriber' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascdr_udv_credit_log' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_crs_usage' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascdr_utn_credit_log' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_vascloud_da' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_voice_msc' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_voice_volte' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_voice_volte_v2' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'blueinfo_ocs_crs_usageda' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          }
+      }
+consistency:
+  active_check_data_type: match
+  active_check_column_name: match
+  check_data_type: 
+    - severity: match
+  check_column_name: 
+    - severity: match
+timeliness:
+  active_check_freshness: fixed
+  check_freshness: 
+    - severity: fixed
+uniqueness: 
+  active_check_primary_key: unique
+  active_check_duplicate_records: unique
+  check_primary_key: 
+    - severity: unique
+  check_duplicate_records:
+    - severity: unique
+validity: 
+  active_check_domain_value: valid
+  check_domain_value: 
+    - severity: valid

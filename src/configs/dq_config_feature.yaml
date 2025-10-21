@@ -1,0 +1,443 @@
+completeness:
+  active_null_ratio: ma
+  active_null_count: ma
+  active_row_count: ma
+  null_ratio: 
+    - severity: ma
+      threshold : {
+        '3gsubs' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'ggsn' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'air' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'no' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'tra' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'device' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'location' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'money_transfer' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'prepaid_danhba' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'sub' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'udv' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_total' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_data' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_sms' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_video' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_voice' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_voip' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'utn' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'vascloud' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'voice' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'volte' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usageda' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'tac_mapping' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'brandname' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'smrs_1' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'smrs_2' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'smrs_3' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+      }
+  null_count:
+    - severity: ma
+      threshold : {
+        '3gsubs' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'ggsn' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'air' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'no' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'tra' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'device' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'location' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'money_transfer' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'prepaid_danhba' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'sub' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'udv' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_total' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_data' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_sms' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_video' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_voice' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_voip' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'utn' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'vascloud' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'voice' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'volte' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usageda' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'tac_mapping' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'brandname' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'smrs_1' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'smrs_2' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'smrs_3' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+      }
+  row_count:
+    - severity: ma
+      threshold : {
+        '3gsubs' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'ggsn' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'air' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'no' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'tra' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'device' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'location' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'money_transfer' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'prepaid_danhba' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'sub' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'udv' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_total' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_data' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_sms' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_video' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_voice' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usage_voip' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'utn' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'vascloud' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'voice' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'volte' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'usageda' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'tac_mapping' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'brandname' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'smrs_1' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'smrs_2' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+        'smrs_3' : {
+          'hard_threshold': 0.2,
+          'soft_threshold': 0.05,
+          'n_obs': 3
+          },
+      }
+consistency:
+  active_check_data_type: match
+  active_check_column_name: match
+  check_data_type: 
+    - severity: match
+  check_column_name: 
+    - severity: match
+timeliness:
+  active_check_freshness: fixed
+  check_freshness: 
+    - severity: fixed
+uniqueness: 
+  active_check_primary_key: unique
+  active_check_duplicate_records: unique
+  check_primary_key: 
+    - severity: unique
+  check_duplicate_records:
+    - severity: unique
+validity: 
+  active_check_domain_value: valid
+  check_domain_value: 
+    - severity: valid

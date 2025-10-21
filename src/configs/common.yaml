@@ -1,0 +1,430 @@
+outdir:
+  features: "features/"
+  models: "models/"
+  scores: "scores/"
+  logs: "logs/"
+
+model_path: 
+ lg_v2_202505: "prod/scores/model_code=lg_v2_202505/"
+ cs_v2_202505: "prod/scores/model_code=cs_v2_202505/"
+
+test_samples:
+  - '1CFFE4C63F5C560901E65BA0AAC018E3'
+  - 'FE2B1646411BD1F5D5524C6F2683C46C'
+  - '89F641E2FAF2BC97E5E148632767DCCE'
+  - '4C80A1C5C068A08E1B170D8DA715F192'
+  - 'D645BD19DA7ACE539761AEAB3F25327A'
+  - '63DCF06D6FC1330C0783B48D2E05A211'
+
+raw_destination : {
+    'blueinfo_ggsn': {
+        'destination': 'blueinfo_ggsn',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['msisdn', 'DURATION', 'DATA_VOLUME_DOWNLINK', 'DATA_VOLUME_UPLINK', 'RECORD_OPENING_TIME'],
+        'validity': {
+            'duration': {'method': '>=', 'value': 0},
+            'data_volume_uplink': {'method': '>=', 'value': 0},
+            'data_volume_downlink': {'method': '>=', 'value': 0},
+        }
+    },
+    'blueinfo_ccbs_spi_3g_subs': {
+        'destination': 'blueinfo_ccbs_spi_3g_subs',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['msisdn', 'time_start', 'time_end', 'service_id', 'last_action', 'id'],
+        'validity': {}
+    },
+    'blueinfo_ocs_air': {
+        'destination': 'blueinfo_ocs_air',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['msisdn', 'reillamount', 'origintimestamp', 'module', 'serviceclass', 'vouchergroup'],
+        'validity': {}
+    },
+    'blueinfo_ccbs_ct_no': {
+        'destination': 'blueinfo_ccbs_ct_no',
+        'update_type': 'monthly',
+        'expected_day': 1,
+        'columns': null,
+        'validity': {}
+    },
+    'blueinfo_ccbs_ct_tra': {
+        'destination': 'blueinfo_ccbs_ct_tra',
+        'update_type': 'monthly',
+        'expected_day': 1,
+        'columns': null,
+        'validity': {}
+    },
+    'blueinfo_tac_gsma': {
+        'destination': 'blueinfo_tac_gsma',
+        'update_type': null,
+        'expected_day': null,
+        'columns': null,
+        'validity': {}
+    },
+    'blueinfo_ccbs_cv207': {
+        'destination': 'blueinfo_ccbs_cv207',
+        'update_type': 'daily',
+        'expected_day': 2,
+        'columns': ['msisdn', 'ma_tinh'],
+        'validity': {}
+    },
+    'blueinfo_vascdr_2friend_log': {
+        'destination': 'blueinfo_vascdr_2friend_log',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['SENDER', 'AMOUNT', 'RECEIVER'],
+        'validity': {
+            'amount': {'method': '>=', 'value': 0},
+        }
+    },
+    'blueinfo_dbvnp_prepaid_subscribers_history': {
+        'destination': 'blueinfo_dbvnp_prepaid_subscribers_history',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': null,
+        'validity': {}
+    },
+    'blueinfo_ccbs_ccs_xxx_danhba_dds_pttb': {
+        'destination': 'blueinfo_ccbs_ccs_xxx_danhba_dds_pttb',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': null,
+        'validity': {}
+    },
+    'blueinfo_ocs_sdp_subscriber': {
+        'destination': 'blueinfo_ocs_sdp_subscriber',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['account_id', 'account_balance', 'service_class_id', 'account_activated_date', 'account_activated_flag'],
+        'validity': {}
+    },
+    'blueinfo_vascdr_udv_credit_log': {
+        'destination': 'blueinfo_vascdr_udv_credit_log',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['msisdn', 'pack_id', 'amount'],
+        'validity': {
+            'amount': {'method': '>', 'value': 0},
+        }
+    },
+    'blueinfo_ocs_crs_usage': {
+        'destination': 'blueinfo_ocs_crs_usage',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['MSISDN', 'ORIGINALTIMESTAMP', 'ORIGINATINGCELLID', 'DURATION', 'VOLUME', 'TOTALCOST', 'CHARGINGCATEGORYNAME', 'SERVICENAME'],
+        'validity': {
+            'duration': {'method': '>=', 'value': 0},
+            'volume': {'method': '>=', 'value': 0},
+            'totalcost': {'method': '>=', 'value': 0},
+        }
+    },
+    'blueinfo_vascdr_utn_credit_log': {
+        'destination': 'blueinfo_vascdr_utn_credit_log',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['msisdn', 'CREDIT_AMOUNT'],
+        'validity': {
+            'credit_amount': {'method': '>', 'value': 0},
+        }
+    },
+    'blueinfo_vascloud_da': {
+        'destination': 'blueinfo_vascloud_da',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['*'],
+        'validity': {
+            'value': {'method': '>', 'value': 0},
+        }
+    },
+    'blueinfo_voice_msc': {
+        'destination': 'blueinfo_voice_msc',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['MSISDN', 'CALL_DURATION', 'CALL_TYPE', 'LOCATION_AREA', 'CELL_ID'],
+        'validity': {
+            # 'call_duration': {'method': '>=', 'value': 0},
+        }
+    },
+    'blueinfo_voice_volte': {
+        'destination': 'blueinfo_voice_volte',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['a_subs', 'call_type', 'call_duration'],
+        'validity': {
+            # 'call_duration': {'method': '>=', 'value': 0},
+        }
+    },
+    'blueinfo_voice_volte_v2': {
+        'destination': 'blueinfo_voice_volte_v2',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['a_subs', 'call_type', 'call_duration'],
+        'validity': {
+            # 'call_duration': {'method': '>=', 'value': 0},
+        }
+    },
+    'blueinfo_ocs_crs_usageda': {
+        'destination': 'blueinfo_ocs_crs_usageda',
+        'update_type': 'daily',
+        'expected_day': 1,
+        'columns': ['MSISDN', 'ORIGINALTIMESTAMP', 'DEDICATEDACCOUNTID', 'UNITS'],
+        'validity': {
+            'units': {'method': '>=', 'value': 0},
+        }
+    }
+}
+
+feature_destination : {
+    '3gsubs': {
+        'destination': 'prod/features/3gsubs/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'ggsn': {
+        'destination': 'prod/features/ggsn/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'air': {
+        'destination': 'prod/features/air/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'no': {
+        'destination': 'prod/features/no/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'tra': {
+        'destination': 'prod/features/tra/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'device': {
+        'destination': 'prod/features/device/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'location': {
+        'destination': 'prod/features/location/l4w/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'money_transfer': {
+        'destination': 'prod/features/money_transfer/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'prepaid_danhba': {
+        'destination': 'prod/features/prepaid_danhba/l1w/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'sub': {
+        'destination': 'prod/features/sub/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'udv': {
+        'destination': 'prod/features/udv/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'usage_total': {
+        'destination': 'prod/features/usage/total/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'usage_data': {
+        'destination': 'prod/features/usage/data/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'usage_sms': {
+        'destination': 'prod/features/usage/sms/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'usage_video': {
+        'destination': 'prod/features/usage/video/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'usage_voice': {
+        'destination': 'prod/features/usage/voice/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'usage_voip': {
+        'destination': 'prod/features/usage/voip/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'utn': {
+        'destination': 'prod/features/utn/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'vascloud': {
+        'destination': 'prod/features/vascloud/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'voice': {
+        'destination': 'prod/features/voice/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'volte': {
+        'destination': 'prod/features/volte/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'usageda': {
+        'destination': 'prod/features/usageda/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'tac_mapping': {
+        'destination': 'prod/features/tac_mapping/weekly/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'brandname': {
+        'destination': 'prod/features/brandname/final_fts/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'smrs_1': {
+        'destination': 'prod/features/smrs/final_fts/group=group_1/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'smrs_2': {
+        'destination': 'prod/features/smrs/final_fts/group=group_2/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+    'smrs_3': {
+        'destination': 'prod/features/smrs/final_fts/group=group_3/date=',
+        'update_type': 'weekly',
+        'expected_day': 0,
+        'columns': null,
+        'validity': {}
+    },
+}
+
+top_features : {
+    'brandname' : [
+        'brandname_sms_count_l12w',
+        'brandname_sms_pct_finance_vs_other_l12w',
+        'brandname_sms_count_other_l12w',
+        'brandname_sms_pct_finance_l12w',
+        'brandname_sms_count_other_l4w',
+        'brandname_sms_count_finance_l4w_vs_l12w'
+    ],
+    'location' : [
+        'location_top1_province_l4w'
+    ], 
+    'prepaid_danhba' : [
+        'prepaid_danhba_age_group_l1w',
+        'prepaid_danhba_sex_l1w'
+    ],
+    'sub' : [
+        'sub_balance_pct_day_lt_5k_l12w',
+        'sub_active_year',
+        'sub_balance_pct_day_lt_1k_l4w'
+    ],
+    'voice' : [
+        'voice_call_out_duration_sum_l12w'
+    ],
+    'air' : [ 
+        'air_refill_min_l12w'
+    ],
+    'smrs' : [
+        'smrs_sms_in_onnet_attempt_max_l2m'
+    ],
+    'ggsn' : [
+        'ggsn_duration_nt_sum_l1w_vs_l4w'
+    ],
+    'device' : [
+        'device_cpu_max_freq'
+    ],
+    'usage' : [
+        'usage_total_cost_dmax_dt_l12w'
+    ]
+}
+
+
+sub_dir : {
+    '3gsubs': 'prod/features/3gsubs/daily/',
+    'ggsn': 'prod/features/ggsn/daily/',
+    'sub': 'prod/features/sub/daily/',
+    'tac_mapping':'prod/features/tac_mapping/daily/',
+    'usage': 'prod/features/usage/data/daily/',
+    'usageda': 'prod/features/usageda/daily/',
+    'vascloud': 'prod/features/vascloud/daily/',
+    'voice': 'prod/features/voice/daily/total_features/',
+    'volte': 'prod/features/volte/daily/total_features/',
+}
+
+job_quality_log : 'prod/job_quality_log/'
+
+
+git:
+  usr: "may01"
+  pwd: "bli123456"

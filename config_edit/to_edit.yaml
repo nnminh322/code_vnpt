@@ -1,0 +1,67 @@
+s3: 
+  bucket_name: "media_os_blueinfo_dev_2"
+  bucket_name_cos: "cos://media_os_blueinfo_dev_2.datalake"
+  s3_endpoint: 'http://access.icos.datalake.vnpt.vn:80'
+  s3_access_key: 'Z994bbFtOibu48HSOyyc'
+  s3_secret_key: '3sYq37oDs30OE8iv21Qh9nIFMQW5Tz80mX9cicUA'
+
+
+single_store: 
+  user: "blueinfo_os_2"
+  password: "UrI0avb0ds0vnJ4rz4E1"
+
+database_name: 
+  db1: "blueinfo_dev" # prepaid danh ba 
+  db2: "blueinfo_dev"
+
+table_name: {
+      'blueinfo_ccbs_ct_no': 'blueinfo_ccbs_ct_no',
+      'blueinfo_ccbs_ct_tra': 'blueinfo_ccbs_ct_tra',
+      'blueinfo_ccbs_cv207' : 'blueinfo_ccbs_cv207',
+      'blueinfo_ccbs_spi_3g_subs' : 'blueinfo_ccbs_spi_3g_subs',
+      'blueinfo_ggsn': 'blueinfo_ggsn',
+      'blueinfo_ocs_air': 'blueinfo_ocs_air',
+      'blueinfo_ocs_crs_usage': 'blueinfo_ocs_crs_usage',
+      'blueinfo_vascdr_2friend_log': 'blueinfo_vascdr_2friend_log',
+      'blueinfo_vascdr_brandname_meta': 'blueinfo_vascdr_brandname_meta',
+      'blueinfo_vascdr_udv_credit_log': 'blueinfo_vascdr_udv_credit_log',
+      'blueinfo_vascdr_utn_credit_log': 'blueinfo_vascdr_utn_credit_log',
+      'blueinfo_vascloud_da': 'blueinfo_vascloud_da',
+      'blueinfo_voice_msc':'blueinfo_voice_msc',
+      'blueinfo_voice_volte': 'blueinfo_voice_volte',
+      'blueinfo_tac_gsma': 'blueinfo_tac_gsma',
+      'prepaid_and_danhba': 'prepaid_and_danhba',
+      'blueinfo_smrs_dwd_geo_rvn_mtd': 'blueinfo_smrs_dwd_geo_rvn_mtd',
+      'blueinfo_dbvnp_prepaid_subscribers_history': 'blueinfo_dbvnp_prepaid_subscribers_history',
+      'blueinfo_ccbs_ccs_xxx_danhba_dds_pttb' : 'blueinfo_ccbs_ccs_xxx_danhba_dds_pttb',
+      'blueinfo_ocs_sdp_subscriber' : 'blueinfo_ocs_sdp_subscriber',
+      'blueinfo_ocs_crs_usageda':'blueinfo_ocs_crs_usageda',
+      'blueinfo_voice_volte_v2': 'blueinfo_voice_volte_v2',
+    }
+
+backtest_table_dict: {
+  'blueinfo_ccbs_ct_no': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_ccbs_ct_tra': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_ccbs_cv207': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_ccbs_spi_3g_subs': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_ggsn': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_ocs_air': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_ocs_crs_usage': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_vascdr_2friend_log': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_vascdr_brandname_meta': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_vascdr_udv_credit_log': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_vascdr_utn_credit_log': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_vascloud_da': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_voice_msc': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_voice_volte': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_tac_gsma': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'prepaid_and_danhba': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_smrs_dwd_geo_rvn_mtd': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_dbvnp_prepaid_subscribers_history': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_ccbs_ccs_xxx_danhba_dds_pttb': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_ocs_sdp_subscriber': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+  'blueinfo_ocs_crs_usageda': {'backtest_table_name': 'backtest_table_name', 'msisdn_column': 'msisdn_column'},
+}
+
+os_volume: "blueinfo-os-volume"
+proxy: "http://10.144.13.144:3129"
